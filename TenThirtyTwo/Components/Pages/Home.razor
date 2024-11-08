@@ -1,0 +1,13 @@
+﻿@page "/"
+
+@inject NavigationManager Navigation
+
+<button @onclick="NavigateToUserPage">Go to User Page</button>
+
+
+@code {
+    private void NavigateToUserPage()
+    {
+        Navigation.NavigateTo("/User");  // Navigate to the /user page (which will load User.razor)
+    }
+}
